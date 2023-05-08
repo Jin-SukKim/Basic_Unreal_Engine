@@ -54,8 +54,22 @@
 		{
 			"Name": "ArenaBattleSetting",
 			"Type": "Runtime",
-			"LoadingPhase": "PreDefault"
+			"LoadingPhase": "PreDefault",
+			"AdditionalDependencies": [
+				"CoreUObject"
+			]
 		},
+		{
+			"Name": "ArenaBattle",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"UMG",
+				"AIModule",
+				"ArenaBattleSetting"
+			]
+		}
         ...
     을 ArenaBattle 모듈 위에 선언해준다.
 
